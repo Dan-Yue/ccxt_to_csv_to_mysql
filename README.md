@@ -66,6 +66,12 @@ Easy Python script to download crypto currency market data with CCXT package
 https://quantlabs.net/blog/2018/05/easy-python-script-to-download-crypto-currency-market-data-with-ccxt-package/
 https://www.youtube.com/watch?v=PTGkJsrF7kQ
 
+----mysql----
+mysql-workbench 数据库管理
+Navicat for MySQL 数据库管理
+
+
+
 
 
 
