@@ -1,8 +1,8 @@
 # ccxt_to_csv_to_mysql
 
+用 ccxt (https://github.com/ccxt/ccxt) 获取 比特币各个交易所数据
 
 
-用 pip install ccxt  获取 比特币各个交易所数据
 
 使用到的python文件 ccxt_market_data.py
 
@@ -36,5 +36,22 @@ C:\BitviseSSHClient\sftpc.exe root@185.225.110.110 -pw=84uf!ueu -cmd="get *.csv 
 
 
 4. 用python 导入到python, 先建立数据库,表, 然后导入到数据库
+
+
+
+参考文档:
+-----ccxt -----
+python异步加协程获取比特币市场信息 https://www.cnblogs.com/xiaxuexiaoab/p/8410682.html
+
+Demo to download hundreds of crypto currency pairs via CCXT Python package from Binance Bitmex OKEx exchanges
+https://quantlabs.net/blog/2018/05/demo-download-hundreds-crypto-currency-pairs-via-ccxt-python-package-binance-bitmex-okex/
+https://www.youtube.com/watch?v=Mf76ZVKsX8I
+
+Easy Python script to download crypto currency market data with CCXT package
+https://quantlabs.net/blog/2018/05/easy-python-script-to-download-crypto-currency-market-data-with-ccxt-package/
+https://www.youtube.com/watch?v=PTGkJsrF7kQ
+
+
+
 
 
