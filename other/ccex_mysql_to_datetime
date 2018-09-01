@@ -109,3 +109,13 @@ else:
     print(qihuo_name+ u'输出ok')
 
 
+#备注 碰到的错误
+
+#使用tushare的pandas进行to_sql操作时的No module named 'MySQLdb'错误处理 
+
+#https://www.cnblogs.com/magicc/p/6490671.html
+
+#Python中pandas函数操作数据库
+
+#https://blog.csdn.net/u011301133/article/details/52488690
+
