@@ -30,8 +30,11 @@ linux 利用 计划任务 每隔一段时间运行, windows 我使用 定时软�
 3.由于需要翻墙,上面 12都是在国外的vps上运行,  本地windows机器用 Bitvise SSH Client 把需要的csv get下来 (或许直接用ftp速度更快)
 
 命令:
+
 C:\BitviseSSHClient\sftpc.exe 用户名@远程主机ip地址 -pw=密码 -cmd="get *.csv O:\vps1\ -o"
+
 例子: 
+
 C:\BitviseSSHClient\sftpc.exe root@185.225.110.110 -pw=84uf!ueu -cmd="get *.csv O:\vps1\ -o"
 
 
@@ -39,8 +42,10 @@ C:\BitviseSSHClient\sftpc.exe root@185.225.110.110 -pw=84uf!ueu -cmd="get *.csv 
 
 
 
-参考文档:
+参考文档
+
 -----ccxt -----
+
 python异步加协程获取比特币市场信息 https://www.cnblogs.com/xiaxuexiaoab/p/8410682.html
 
 Demo to download hundreds of crypto currency pairs via CCXT Python package from Binance Bitmex OKEx exchanges
