@@ -1,6 +1,6 @@
 # ccxt_to_csv_to_mysql
 
-用 ccxt (https://github.com/ccxt/ccxt) 获取 比特币各个交易所数据
+用 ccxt (https://github.com/ccxt/ccxt) 获取 比特币各个交易所数据 (更多介绍看参考文档)
 
 
 
