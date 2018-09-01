@@ -3,7 +3,7 @@
 # -*- coding:utf-8*-
 
 #ccex 数据时间戳是unix,转换成 date和time时间,数据来源以及导入mysql,这里是从mysql获取
-
+#代码只是实现了功能,没有可读性
 
 
 from pandas import Series, DataFrame
