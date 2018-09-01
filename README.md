@@ -77,6 +77,22 @@ Navicat for MySQL 数据库管理
 
 
 
+#其他帮助
+
+python2.7.13安装MySQLdb模块及使用
+命令行安装
+    pip install python-mysql
+    
+或者
+访问: http://www.lfd.uci.edu/~gohlke/pythonlibs/，下载MySQL_python-1.2.5-cp27-none-win_amd64.whl   
+
+注意这里了64版本,如果你安装的python是27 32版本请 MySQL_python‑1.2.5‑cp27‑none‑win32.whl
+
+然后切换路径到 c:\py27\scripts\pip install MySQL_python-1.2.5-cp27-none-win_amd64.whl 
+
+
+
+
 
 
 
