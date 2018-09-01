@@ -53,6 +53,7 @@ C:\BitviseSSHClient\sftpc.exe root@185.225.110.110 -pw=84uf!ueu -cmd="get *.csv 
 
 
 4. 用python 把下载下来的csv 导入到本地mysql, 先建立数据库,表, 然后导入到数据库
+方法见 v1
 
 
 
