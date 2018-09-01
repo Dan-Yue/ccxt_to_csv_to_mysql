@@ -1,5 +1,5 @@
 # _*_ coding:utf-8 _*_
-
+#python 27
 
 #下一步 1.csv导入mysql_1.py
 
