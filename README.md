@@ -14,12 +14,19 @@
 1.先安装 ccxt   pip install ccxt 
 
 2.获取交易所比特币等数据 csv格式, 命令行模式下运行 python /root/ccxt_market_data2.py -s BTC/USDT -e binance -t 1m
-获取到的文件 binance-BTCUSDT-1m.csv , 
+
+获取到的文件 binance-BTCUSDT-1m.csv 
+
 Timestamp,Open,High,Low,Close,Volume
+
 1535710500000,6972.0,6974.0,6971.02,6971.05,22.762053
+
 1535710560000,6971.05,6974.0,6962.34,6966.21,43.335086
+
 1535710620000,6966.25,6968.32,6960.0,6965.45,36.691563
+
 1535710680000,6965.44,6972.65,6962.87,6965.96,49.018599
+
 (注意 binance 用 ccxt_market_data2.py, okex 用ccxt_market_data.py,主要是okex不支持 limit=1000)
 
 可以生产批处理文件, linux用 sh , windows 用bat,cmd
