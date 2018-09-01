@@ -68,11 +68,11 @@ df['Timestamp']=df['Timestamp']+timedelta(hours=8)
 #df[DATE_FIELD]=(pd.to_datetime(df[DATE_FIELD],unit='ms'))
 
 
-#提取时间
+#提取time时间
 df['time'] = pd.to_datetime(df['Timestamp'],format='%H%M')
 df['time'] = pd.to_datetime(df['time']).dt.time
 
-#提取时间
+#提取date时间
 #df['date'] = pd.to_datetime(df['date'],format='%H%M')
 df['date'] = pd.to_datetime(df['Timestamp']).dt.date
 
