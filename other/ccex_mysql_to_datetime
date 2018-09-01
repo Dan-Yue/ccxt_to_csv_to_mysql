@@ -62,11 +62,10 @@ df['Timestamp'] = pd.to_datetime(df['Timestamp'])
 
 #时区处理#
 df['Timestamp']=df['Timestamp']+timedelta(hours=8)
+#主要是binance 和 北京时间相差8小时,其他交易所根据情况更改
 
 
-#df['date'] = pd.to_datetime(df['date'],unit='s')
-#df[DATE_FIELD]=(pd.to_datetime(df[DATE_FIELD],unit='ms'))
-
+#下面如果 你需要的是 date和time连载一起的就跳过 ----
 
 #提取time时间
 df['time'] = pd.to_datetime(df['Timestamp'],format='%H%M')
@@ -88,6 +87,10 @@ df.insert(1, 'time', mid)
 mid = df['date']
 df.drop(labels=['date'], axis=1,inplace = True)
 df.insert(1, 'date', mid)
+
+# ------你需要的是 date和time连载一起的上面可跳过-----
+
+
 
 del df['Timestamp']
 
