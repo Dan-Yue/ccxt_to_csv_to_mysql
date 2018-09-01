@@ -1,7 +1,18 @@
 # -*- coding: utf-8 -*-
 #python
 
+
+
 '''
+
+https://quantlabs.net/blog/2018/05/demo-download-hundreds-crypto-currency-pairs-via-ccxt-python-package-binance-bitmex-okex/
+
+https://www.youtube.com/watch?v=Mf76ZVKsX8I
+
+https://quantlabs.net/blog/2018/05/easy-python-script-to-download-crypto-currency-market-data-with-ccxt-package/
+
+https://www.youtube.com/watch?v=PTGkJsrF7kQ
+
 Author: www.backtest-rookies.com
 
 MIT License
