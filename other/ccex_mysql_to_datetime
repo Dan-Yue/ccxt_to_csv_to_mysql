@@ -83,16 +83,17 @@ df.drop(labels=['time'], axis=1,inplace = True)
 df.insert(1, 'time', mid)
 
 
-#插入date
+#插入date,解决列的前后位置 使得 date最前面,其次是time
 mid = df['date']
 df.drop(labels=['date'], axis=1,inplace = True)
 df.insert(1, 'date', mid)
-
-# ------你需要的是 date和time连载一起的上面可跳过-----
-
-
-
 del df['Timestamp']
+
+# ------你需要的是 date和time连载一起的上面可跳过 只需要把 ['Timestamp'] 改成 ['datetime'],方法参考 date和time位置处理-----
+
+
+
+
 
 
 
