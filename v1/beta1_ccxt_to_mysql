@@ -2,6 +2,10 @@
 
 #新建表,符合 ccxt1
 
+# beta1_ccxt_to_mysql 负责新建表,和字段, beta2_ccxt_to_mysql负责导入csv ; beta1and2_ccxt_to_mysql 是2个一起运行
+
+#20180901 肯定还能修改,先实现功能
+
 
 #from sqlalchemy import create_engine
 import MySQLdb
