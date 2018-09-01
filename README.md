@@ -3,17 +3,21 @@
 用 ccxt (https://github.com/ccxt/ccxt) 获取 比特币各个交易所数据 (更多介绍看参考文档)
 
 
-
 使用到的python文件 ccxt_market_data.py
 
 
 大致的思路
+
+翻墙服务器->安装pip install ccxt(python) ->用ccxt_market_data.py 下载各交易所数字货币csv-> 本地服务器get文件-> 导入mysql数据库
+
 
 (备注:1,2 在国外vps上运行,linux,windows均可)
 
 1.先安装 ccxt   pip install ccxt 
 
 2.获取交易所比特币等数据 csv格式, 命令行模式下运行 python /root/ccxt_market_data2.py -s BTC/USDT -e binance -t 1m
+
+可以用批处理文件, linux用 sh , windows 用bat,cmd
 
 获取到的文件 binance-BTCUSDT-1m.csv 
 
@@ -29,9 +33,8 @@ Timestamp,Open,High,Low,Close,Volume
 
 (注意 binance 用 ccxt_market_data2.py, okex 用ccxt_market_data.py,主要是okex不支持 limit=1000)
 
-可以生产批处理文件, linux用 sh , windows 用bat,cmd
 
-linux 利用 计划任务 每隔一段时间运行, windows 我使用 定时软件ontime
+linux 利用 计划任务 每隔一段时间运行sh, windows 我使用 定时软件ontime  bat或cmd批处理文件
 
 
 3.由于需要翻墙,上面 12都是在国外的vps上运行,  本地windows机器用 Bitvise SSH Client 把需要的csv get下来 (或许直接用ftp速度更快)
