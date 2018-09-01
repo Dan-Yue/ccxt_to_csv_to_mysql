@@ -1,7 +1,7 @@
 # ccxt_to_csv_to_mysql
 
 
-#功能: 数字货币k线数据 本地数据库mysql落地方案
+#功能: 数字货币k线数据导入到本地数据库mysql落地方案
 
 
 用 ccxt (https://github.com/ccxt/ccxt) 获取 比特币各个交易所数据 (更多介绍看参考文档)
