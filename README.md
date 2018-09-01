@@ -12,7 +12,7 @@
 
 大致的思路
 
-翻墙服务器->安装pip install ccxt(python) ->用ccxt_market_data.py 下载各交易所数字货币csv-> 本地服务器get文件-> 导入mysql数据库 -->用python pandas 从数据库导出文件,然后分析
+翻墙服务器->安装pip install ccxt(python) ->用ccxt_market_data.py 下载各交易所数字货币csv-> 本地服务器远程从翻墙服务器获取文件-> 导入mysql数据库 -->用python pandas 从数据库导出文件,然后量化分析
 
 
 (备注:1,2 在国外vps上运行,linux,windows均可)
