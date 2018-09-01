@@ -7,7 +7,7 @@
 用 ccxt (https://github.com/ccxt/ccxt) 获取 比特币各个交易所数据,数字货币排名 https://coinmarketcap.com/ (更多介绍看参考文档)
 
 
-使用到的python文件 ccxt_market_data.py
+使用到的python文件 ccxt_market_data.py https://backtest-rookies.com/2018/03/08/download-cryptocurrency-data-with-ccxt/
 
 
 大致的思路
