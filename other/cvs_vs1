@@ -23,7 +23,7 @@ import os.path
 #pd.set_option('display.width', 500)
 
 # 输出磁盘
-path_1 = "U:/ccex_to_mc/"
+path_1 = "U:/ccex_to/"
 
 # 策略名字
 e_name = "d3/"
