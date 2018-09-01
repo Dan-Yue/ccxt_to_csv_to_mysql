@@ -1,5 +1,9 @@
 # ccxt_to_csv_to_mysql
 
+
+#功能: 数字货币k线数据 本地数据库mysql落地方案
+
+
 用 ccxt (https://github.com/ccxt/ccxt) 获取 比特币各个交易所数据 (更多介绍看参考文档)
 
 
@@ -8,7 +12,7 @@
 
 大致的思路
 
-翻墙服务器->安装pip install ccxt(python) ->用ccxt_market_data.py 下载各交易所数字货币csv-> 本地服务器get文件-> 导入mysql数据库
+翻墙服务器->安装pip install ccxt(python) ->用ccxt_market_data.py 下载各交易所数字货币csv-> 本地服务器get文件-> 导入mysql数据库 -->用python pandas 从数据库导出文件,然后分析
 
 
 (备注:1,2 在国外vps上运行,linux,windows均可)
