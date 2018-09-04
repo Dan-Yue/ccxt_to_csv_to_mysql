@@ -38,7 +38,7 @@ Timestamp,Open,High,Low,Close,Volume
 (注意 binance 用 ccxt_market_data2.py, okex 用ccxt_market_data.py,主要是okex不支持 limit=1000)
 
 
-linux 利用 计划任务 每隔一段时间运行sh, windows 我使用 定时软件ontime  bat或cmd批处理文件
+linux 利用 Crontab计划任务 每隔一段时间运行sh, windows 我使用 定时软件ontime (链接: https://pan.baidu.com/s/1Z8YfGkNjjKg_murUwL5oSg 密码: yjt7) bat或cmd批处理文件
 
 
 3.由于需要翻墙,上面 12都是在国外的vps上运行,  本地windows机器用 Bitvise SSH Client 把需要的csv get下来 (或许直接用ftp速度更快)
@@ -51,9 +51,10 @@ C:\BitviseSSHClient\sftpc.exe 用户名@远程主机ip地址 -pw=密码 -cmd="ge
 
 C:\BitviseSSHClient\sftpc.exe root@185.225.110.110 -pw=84uf!ueu -cmd="get *.csv O:\vps1\ -o"
 
+(这里针对的是 linux ssh连接方式,如果你是windows就需要安装ftp或者sftp服务了)
 
-4. 用python 把下载下来的csv 导入到本地mysql, 先建立数据库,表, 然后导入到数据库
-方法见 v1
+
+4. 用python 把下载下来的csv 导入到本地mysql, 先建立数据库,表, 然后导入到数据库方法见 v1
 
 
 
