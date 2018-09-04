@@ -1,4 +1,6 @@
 # _*_ coding:utf-8 _*_
+#python27
+
 
 #新建表,符合 ccxt1
 
