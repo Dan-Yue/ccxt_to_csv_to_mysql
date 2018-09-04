@@ -54,7 +54,7 @@ C:\BitviseSSHClient\sftpc.exe root@185.225.110.110 -pw=84uf!ueu -cmd="get *.csv 
 (这里针对的是 linux ssh连接方式,如果你是windows就需要安装ftp或者sftp服务了)
 
 
-4. 用python 把下载下来的csv 导入到本地mysql, 先建立数据库,表, 然后导入到数据库方法见 v1
+4. 用python 把下载下来的csv 导入到本地mysql, 先建立数据库,表, 然后导入到数据库方法见 v1, beta1_ccxt_to_mysql.py负责新建表, beta2_ccxt_to_mysql.py 负责导入数据
 
 
 
