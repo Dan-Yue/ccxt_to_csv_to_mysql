@@ -13,7 +13,7 @@ import csv
 
 
 ##需要修改的地方
-#engine = create_engine('mysql://root:xxxxxxxx@192.168.100.151/stock?charset=utf8')
+#engine = create_engine('mysql://root:密码@192.168.100.151/stock?charset=utf8')
 conn = MySQLdb.connect(host='192.168.100.151', user='root', passwd='xxxxxxx', charset="utf8")
 db = MySQLdb.connect(host='192.168.100.151',user='root', passwd='xxxxxxxx', charset="utf8")
 
