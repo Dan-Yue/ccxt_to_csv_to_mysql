@@ -120,7 +120,7 @@ else:
 #https://www.cnblogs.com/magicc/p/6490671.html
 
 #python3.*报“ImportError: No module named ‘MySQLdb'” 
-#https://blog.csdn.net/u011301133/article/details/52488690
+#https://www.cnblogs.com/TaleG/p/6735099.html
 
 #Python中pandas函数操作数据库
 
