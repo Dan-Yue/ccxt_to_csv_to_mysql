@@ -49,3 +49,6 @@ for cdname in codenameall:
 #使用tushare的pandas进行to_sql操作时的No module named 'MySQLdb'错误处理  
 
 #https://www.cnblogs.com/magicc/p/6490671.html
+
+#python3.*报“ImportError: No module named ‘MySQLdb'” 
+#https://www.cnblogs.com/TaleG/p/6735099.html
