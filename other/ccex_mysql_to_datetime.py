@@ -119,6 +119,9 @@ else:
 
 #https://www.cnblogs.com/magicc/p/6490671.html
 
+#python3.*报“ImportError: No module named ‘MySQLdb'” 
+#https://blog.csdn.net/u011301133/article/details/52488690
+
 #Python中pandas函数操作数据库
 
 #https://blog.csdn.net/u011301133/article/details/52488690
