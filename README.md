@@ -72,6 +72,33 @@ Easy Python script to download crypto currency market data with CCXT package
 https://quantlabs.net/blog/2018/05/easy-python-script-to-download-crypto-currency-market-data-with-ccxt-package/
 https://www.youtube.com/watch?v=PTGkJsrF7kQ
 
+
+---安装 pip install ccxt 报错
+Failed to build lru-dict
+Installing collected packages: pypiwin32, lru-dict, web3, ccxt
+ building 'lru' extension
+error: Microsoft Visual C++ 14.0 is required. Get it with "Microsoft Visual C++ Build Tools": http://landinghub.visualstudio.com/visual-cpp-build-tools
+
+访问 https://www.lfd.uci.edu/~gohlke/pythonlibs/
+
+
+找到pytho对应的版本 cp36 就是 python36
+
+
+pywin32‑223.1‑cp36‑cp36m‑win_amd64.whl
+
+
+https://www.lfd.uci.edu/~gohlke/pythonlibs/#lru_dict
+
+lru_dict‑1.1.6‑cp36‑cp36m‑win_amd64.whl
+
+
+下载后用下面命令安装后 再次安装 pip install ccxt, 注意执行pip时候需要在当前目录下有下面2个文件
+pip install pywin32‑223.1‑cp36‑cp36m‑win_amd64.whl
+pip install lru_dict‑1.1.6‑cp36‑cp36m‑win_amd64.whl
+
+
+
 ----mysql----
 mysql-workbench 数据库管理
 Navicat for MySQL 数据库管理
