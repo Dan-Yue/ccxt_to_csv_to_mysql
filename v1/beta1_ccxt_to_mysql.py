@@ -69,6 +69,8 @@ for cdname in codenameall:
 
     #Timestamp,Open,High,Low,Close,Volume
 
+    
+    #数据结构应该可以更好,这里就全部写成 double 了
     try:
         cursor.execute("""
           CREATE TABLE IF NOT EXISTS `%s`(
