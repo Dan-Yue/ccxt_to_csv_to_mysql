@@ -124,6 +124,19 @@ python2.7.13安装MySQLdb模块及使用
 
 
 
+将Linux 上的Python2.7 升级成Python3.6
+
+https://blog.csdn.net/wwwdaan5com/article/details/78218277
+
+
+centos下安装pip时失败
+
+https://www.cnblogs.com/saolv/p/6963314.html
+
+
+
+
+
 
 
 
