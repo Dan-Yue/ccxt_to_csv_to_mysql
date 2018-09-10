@@ -1,0 +1,94 @@
+#https://bitfinex.com WebsocketApp  to  csv
+# 1分钟蜡烛图 to csv
+
+# _*_ coding:utf-8 _*_
+#
+
+import websocket
+import json
+import os
+import re
+
+import sys
+
+try:
+    import thread
+
+except ImportError:
+    import _thread as thread
+    import time
+
+def on_open(ws):
+    json_data = json.dumps({
+      "event": "subscribe",
+      "channel": "candles",
+      "key": "trade:1m:tBTCUSD"})
+    ws.send(json_data)
+    #上面的参数可以获取1k 蜡烛图 开高低收成交量
+    #https://docs.bitfinex.com/v2/reference#ws-public-candle
+
+
+hb = "hb"
+zhongguohao = "["
+zhongguohao2= "[["
+
+test = [0, 0]
+
+def on_message(ws, message):
+
+    if hb in message:
+        print ("hb")
+
+    elif zhongguohao2 in message:
+
+        with open('a_old.txt', 'w') as f:
+            f.write(message+'\n')
+
+    elif zhongguohao in message:
+
+        with open('a_latest.txt', 'a') as f:
+            arr = message
+            print(type(message))
+            print(message)
+            #字符串格式的 [221135,[1536587880000,6309.0209674,6310,6310.2,6309.0209674,26.240407]]
+
+            message = message.replace('[', '')
+            #去除 "["
+            message = message.replace(']', '')
+            # 去除 "]"
+            print(message)
+
+            mes_list = []
+            mes_list = message.split(",")
+            #转换成数组list
+            del mes_list[0]
+            #去除第一个
+            print(mes_list)
+            mes_str = ','.join(mes_list)
+            f.write(mes_str+'\n')
+
+
+    else:
+        print("other scr")
+
+
+def on_error(ws, error):
+    print(error)
+
+def on_close(ws):
+    print("### closed ###")
+
+websocket.enableTrace(True)
+ws = websocket.WebSocketApp("wss://api.bitfinex.com/ws/",
+                            on_open = on_open,
+                            on_message=on_message,
+                            on_error=on_error,
+                            on_close=on_close)
+ws.run_forever(sslopt={"check_hostname": False})
+
+#ws = websocket.WebSocketApp('wss://api.bitfinex.com/ws/2')
+#ws.on_open = lambda self: self.send('{ "event": "subscribe",  "channel": "candles",  "key": "trade:1m:tBTCUSD" }')
+#ws.on_message = lambda self, evt:  print (evt)
+
+
+#感谢 unknown labs
