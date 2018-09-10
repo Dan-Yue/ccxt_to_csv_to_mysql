@@ -1,5 +1,6 @@
 #https://bitfinex.com WebsocketApp  to  csv
 # 1分钟蜡烛图 to csv
+#a_old.txt 保存了 websocket提供的历史 (好像600条左右). a_latest.txt提供了实时1k数据
 
 # _*_ coding:utf-8 _*_
 #
