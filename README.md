@@ -95,7 +95,16 @@ lru_dict‑1.1.6‑cp36‑cp36m‑win_amd64.whl
 
 下载后用下面命令安装后 再次安装 pip install ccxt, 注意执行pip时候需要在当前目录下有下面2个文件
 pip install pywin32‑223.1‑cp36‑cp36m‑win_amd64.whl
+
 pip install lru_dict‑1.1.6‑cp36‑cp36m‑win_amd64.whl
+
+另外一种可能有效的方法
+
+conda update --all
+
+conda install -c quantopian lru-dict
+
+pip install ccxt
 
 
 
