@@ -1,9 +1,7 @@
-#把 导入到数据库
-
 # _*_ coding:utf-8 _*_
 #python27
-#把t3 (python3 D:\Py-test2\2018\201809)生成css 导入到数据库
 
+#把 download_1k_by_bitfinex_1_2 导入到数据库
 
 
 #新建表,符合 ccxt1
@@ -20,22 +18,22 @@ import csv
 
 ##需要修改的地方
 #engine = create_engine('mysql://root:密码@192.168.100.151/stock?charset=utf8')
-conn = MySQLdb.connect(host='192.168.100.151', user='root', passwd='密码', charset="utf8")
-db = MySQLdb.connect(host='192.168.100.151',user='root', passwd='密码', charset="utf8")
+conn = MySQLdb.connect(host='192.168.100.151', user='root', passwd='密码', charset="utf8")  #需要修改
+db = MySQLdb.connect(host='192.168.100.151',user='root', passwd='密码', charset="utf8")  #需要修改
 
 
 #数据库名
-data_name = 'ccxt1'
+data_name = 'ccxt1'  #需要修改
 
 #获取目录下面csv的文件名 导入到列表
-file_path = 'D://Py-test2//2018//201809//bitfinex.com//webs_eos_1k//'
+file_path = 'D://Py-test2//2018//201809//bitfinex.com//webs_eos_1k//'   #需要修改
 
 ##修改结束
 
 #连接数据库（参照MySQL Workbench中的设定）
 
 
-data_name2 = 'USE ccxt1'
+data_name2 = 'USE ccxt1'   #需要修改
 #数据库名 只修改 ccxt1 , 保留USE
 
 
@@ -44,8 +42,8 @@ codenameall = []
 for root, dirs, files in os.walk(file_path):# 注意：这里请填写数据文件在您电脑中的路径
     if files:
         for f in files:
-            if '.csv' in f:
-                codenameall.append(f.split('.csv')[0])
+            if '.csv' in f:    #需要修改
+                codenameall.append(f.split('.csv')[0])   #需要修改
 print (codenameall)
 
 # 股票代码
@@ -55,7 +53,7 @@ print (codenameall)
 
 for cdname in codenameall:
 
-    acdname1 = "bitf_eos_usd_1k_t2"
+    acdname1 = "bitf_eos_usd_1k_t2"    #需要修改
 
     cursor = conn.cursor()
 
