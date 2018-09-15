@@ -13,6 +13,9 @@ bitfinex_Websocket_to_csv_old_to_sql
 
 bitfinex_Websocket_to_csv 生成的old数据导入数据库
 
+bitfinex_Websocket_to_csv_new_to_sql_out_csv
+把上面导入到数据库的内容再导出数据库
+
 
 ccex_mysql_to_datetime.py
 #从数据库获取数据,并且修改datetime
