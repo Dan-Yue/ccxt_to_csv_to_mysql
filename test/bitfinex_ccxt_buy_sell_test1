@@ -86,8 +86,8 @@ bitfinex = ccxt.bitfinex()
 # df = bitfinex.fetch_ohlcv("BTC/USDT", "15m")
 # print(df)
 
-bitfinex.apiKey = 'FlHKiHFv4nDgt873crOAXyUSizo4phLZCM1yvlNd6qs'
-bitfinex.secret = '8oFWDGsQJP7cwM98jvPe2QkRkAqdW009GMCl6Hkqk2W'
+bitfinex.apiKey = 'xxxx'
+bitfinex.secret = 'xxxxx'
 
 
 # 仓位检查
